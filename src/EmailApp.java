@@ -9,5 +9,7 @@ public class EmailApp {
         Scanner in = new Scanner(System.in);
         Email em1 = new Email(in);
         in.close();
+        em1.setAlternativeEmail("teste@test.com");
+        System.out.println(em1.getAlternativeEmail());
     }
 }
